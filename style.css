@@ -1,0 +1,100 @@
+
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust as needed */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#auth-section, #todo-section {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 10px); /* Full width minus padding */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 15px;
+  margin: 5px; /* Space between buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+#todo-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin-top: 10px;
+}
+
+#todo-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center content */
+}
+
+#todo-list li:last-child {
+  border-bottom: none; /* Remove bottom border from last item */
+}
+
+#todo-list li span {
+  flex-grow: 1; /* Allow task text to expand */
+}
+
+#todo-list li button {
+background-color: #f44336; /* Red for delete */
+color: white;
+padding: 5px 10px;
+margin-left: 10px; /* Space from task text */
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#todo-list li button:hover {
+background-color: #d32f2f; /* Darker red on hover */
+}
+
+
+
+/* Responsive adjustments (example) */
+@media (max-width: 450px) {
+  .container {
+      width: 90%; /* Occupy more width on smaller screens */
+  }
+}

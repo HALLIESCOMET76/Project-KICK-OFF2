@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>To-Do List</h2>
+
+        <div id="auth-section">
+            
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <button onclick="signup()">Sign Up</button>
+        </div>
+
+        <div id="todo-section" style="display: none;">
+            <input type="text" id="new-task" placeholder="Enter new task">
+            <button onclick="addTask()">Add Task</button>
+            
+            <ol id="todo-list"></ol>
+            
+            <button onclick="saveAndExit()">Save and Exit</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
